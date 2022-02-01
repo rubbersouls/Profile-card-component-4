@@ -1,0 +1,79 @@
+:root{
+	--colo1: #7A7B7F;
+	--colo2: #262537;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+	background-color: #19A1AD;
+	background-size: 100vh, 100vh;
+	background-position: 0vh -40vh, calc(100vw - 99vh) 50vh;
+	background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+	background-repeat : no-repeat, no-repeat;	
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+
+section{
+	width: 350px;
+	height: 374px;
+	background-color: #FFF;
+	background-image: url(images/bg-pattern-card.svg);
+	background-repeat: no-repeat;
+	border-radius: 16px;
+	text-align: center;
+}
+
+.picture{
+	padding-top: 88px;
+}
+
+section>div>img{
+	border-radius: 50%;
+	border: solid #FFF 5px;
+}
+
+section>h3{
+	padding-top: 18px;
+	color: var(--colo2);
+	font-size: 1.1em;
+}
+
+section>h3>span{
+	color: var(--colo1);
+}
+
+section>p{
+	padding-top: 8px;
+	color: var(--colo1);
+	font-size: 15px;
+}
+
+.box{
+	display: flex;
+	border-top: solid 1px;
+	color: var(--colo1);
+	margin-top: 28px;
+	align-items: center;
+}
+
+.sousbox{
+	flex: 1;
+	padding-top: 17px;
+}
+
+.sousbox>h3{
+	color: var(--colo2);
+}
